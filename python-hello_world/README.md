@@ -1,0 +1,1 @@
+This folder and directory will be the first foray into simple PYTHON commands and usability.
