@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 if __name__ == "__main__":
-    arg_ct - len(sys.argv) - 1
+    arg_ct = len(sys.argv) - 1
     if arg_ct == 0:
         print(arg_ct)
     elif arg_ct == 1:
