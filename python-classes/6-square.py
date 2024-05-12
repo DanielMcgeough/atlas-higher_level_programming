@@ -7,10 +7,9 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """Create a Square
-        Args:
-            size: length of a side of Square
-            position: where the square is (coordinates)
-        """
+        Arguments:
+            size: length of a side of Square.
+            position: where the square is."""
         self.size = size
         self.position = position
 
@@ -19,11 +18,10 @@ class Square:
 
     @property
     def size(self):
-        """"The propery of size as the len of a side of Square
-        Raises:
+        """The propery of size as the len of a side of Square
+        Raises(what errors are called):
             TypeError: if size != int
-            ValueError: if size < 0
-        """
+            ValueError: if size < 0"""
         return self.__size
 
     @size.setter
@@ -47,8 +45,7 @@ class Square:
         """set the position of this Square
         Args: value as a tuple of two positive integers
         Raises:
-            TypeError: if value is not a tuple or any int in tuple < 0
-        """
+            TypeError: if value is not a tuple or any int in tuple < 0"""
         if not isinstance(value, tuple):
             raise TypeError('position must be a tuple of 2 positive integers')
         if len(value) != 2:
@@ -59,8 +56,7 @@ class Square:
 
     def area(self):
         """Get the area of a Square
-        Returns: The size squared
-        """
+        Returns: The size squar"""
         return self.__size * self.__size
 
     def pos_print(self):
