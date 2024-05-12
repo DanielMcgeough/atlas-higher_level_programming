@@ -3,8 +3,8 @@
 
 
 class Square:
-	"""Defines a square."""
+    """Defines a square."""
 
-	def __init__(self, size):
-		"""constructor with an argument of size of square."""
-		self.__size = size
+    def __init__(self, size):
+        """constructor with an argument of size of square."""
+        self.__size = size
