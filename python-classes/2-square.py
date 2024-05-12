@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Square module"""
 
+
 class Square:
     """Defines a square"""
 
     def __init__(self, size=0):
         """Constructor with arg of size
-        has two error messages for type 
+        has two error messages for type
         and value"""
 
         if not isinstance(size, int):
