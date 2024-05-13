@@ -1,0 +1,21 @@
+Test cases for 0-add_integer.py module
+
+The module takes two integers called a and
+b and adds them together and returns the result.
+
+Importing functions from the module:
+    >>> add_integer = __import__('0-add_intger').add_integer
+
+adding two positive integers (a = 1, b = 1)
+    >>>> add_integer(1, 1)
+    2
+
+add one positive and one negative integer (a = 10, b = -4)
+    >>>> add_integer(10, -4)
+    6
+
+add two negative integers (a = -10 and b = -4)
+    >>>> add_integer(-10, -4)
+    -14
+
+add two integers with the 
