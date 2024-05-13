@@ -10,12 +10,31 @@ adding two positive integers (a = 1, b = 1)
     >>>> add_integer(1, 1)
     2
 
-add one positive and one negative integer (a = 10, b = -4)
+adding one positive and one negative integer (a = 10, b = -4)
     >>>> add_integer(10, -4)
     6
 
-add two negative integers (a = -10 and b = -4)
+adding two negative integers (a = -10 and b = -4)
     >>>> add_integer(-10, -4)
     -14
 
-add two integers with the 
+adding two integers with the second being the same as the default value of b (a = 2, b = 98)
+    >>>> add_intger(2, 98)
+    100
+
+adding a positive float and a positive integer (a = 2.5, b = 5)
+    >>>> add_integer(2.5, 5)
+    7
+
+adding a float and an integer where the integer is equal to the default value of b(a = 2.5, b = 98)
+    >>>> add_integer(2.5, 98)
+    100
+
+adding a positive float and a negative integer ( a = 10.5, b = -2)
+    >>>> add_integer(10.5, -2)
+    8
+
+adding two negative floats(a = -10.5, b = -2)
+    >>>> add_integer(-10.5, -2)
+    -12
+
