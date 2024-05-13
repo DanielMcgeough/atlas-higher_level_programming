@@ -2,6 +2,7 @@
 """This module adds two integers called
 a and b together"""
 
+
 def add_integer(a, b=98):
     """
     Returns the sum of two ints or floats as an int
@@ -12,7 +13,7 @@ def add_integer(a, b=98):
 
     Returns:
         sum of a and b or both arguments
-    
+
     Raises:
         TypeError: if either of args or not an
         int or float throws error
