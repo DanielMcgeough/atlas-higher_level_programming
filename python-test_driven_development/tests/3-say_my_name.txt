@@ -25,8 +25,20 @@ First name attribute not a string but last name is.
     ...
     TypeError: first_name must be a string
 
-If both the first and last name arguments are not entered
-    >>> say_my_name()
+If the first name is not entered
+    >>> say_my_name(,"Ryan")
     Traceback (most recent call last):
     ...
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+if the last name is not entered
+    >>> say_my_name("Jack",)
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 1 required positional argument: 'last_name'
+
+if the first and last name are not entered
+    >>> say_my_name()
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 2 required positional argument: 'last_name', 'first_name'
