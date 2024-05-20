@@ -19,7 +19,7 @@ class Rectangle(BaseGeomtery):
         return self.__width * self.__height
     
     def __str__(self):
-        """prints a pretty representation of a rectangle"""
-        string = "[" + str(self.__class__.__name__) + "]"
+        """returns the print() and str() representation of a Rectangle"""
+        string = "[" + str(self.__class__.__name__) + "] "
         string += str(self.__width) + "/" + str(self.__height)
         return string
