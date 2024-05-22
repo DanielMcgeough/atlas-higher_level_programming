@@ -22,11 +22,10 @@ class Book(self):
         else:
              return("book is not checked out")
 
-class Library(Book):
-    def __init__(self, books, title):
+class Library(self):
+    def __init__(self, books):
         self.books = books
-        self.title = title
-
+        books 
     
     if books is []:
         return ValueError("There needs to be at least one book in library")
