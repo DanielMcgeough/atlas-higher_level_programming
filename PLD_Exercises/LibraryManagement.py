@@ -52,7 +52,7 @@ class Member:
             book.return_book()
             self.borrowed_books.remove(book)
     def list_books(self):
-        print(self.name, ":")
+        print(self.name, ":", sep="")
         for book in self.borrowed_books:
             print(book.title)
 
