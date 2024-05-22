@@ -21,12 +21,21 @@ class Book(self):
             return("book is checked out")
         else:
              return("book is not checked out")
+    
+    book1 = ("Croma Venture", "Joel Shepard", 1234, False )
+    book2 = ("Kite Runner", "Khaled Hosseini", 5678, False)
+    book3 = ("Brutal Prince", "Sophie Lark", 91011, False)
+    book4 = ("Aftershokcs", "Marko Kloos", 1231, True)
 
 class Library(self):
-    def __init__(self, books):
-        self.books = books
-        books 
-    
+    books = list[Book] []
+    def add_book(self, book):
+        books.append(book)
+    def remove_book(self, book):
+        books.remove(book)
+    def find_book_by_title(self, title)
+        if book.title isinstance (title)
     if books is []:
         return ValueError("There needs to be at least one book in library")
+    
     
