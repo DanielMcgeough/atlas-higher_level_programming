@@ -10,7 +10,8 @@ class Base:
         Attributes:
             __nb_objects: counts instances
         Methods:
-            __init__: initializes instances with user supplied ir or id from Base
+            __init__: initializes instances 
+            with user supplied ir or id from Base
     """
     __nb_objects = 0
 
@@ -27,7 +28,7 @@ class Base:
         if list_dictionaries is None or list_dictionaries is []:
             return "[]"
         if (type(list_dictionaries) is not list or not
-                all(type(i) == dict for i in list_dictionaries)):
+                all(type(i) is dict for i in list_dictionaries)):
             raise TypeError("list_dictionaries must be a list of dictionaries")
         return json.dumps(list_dictionaries)
 
