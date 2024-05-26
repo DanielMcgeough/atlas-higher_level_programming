@@ -10,7 +10,7 @@ class Base:
         Attributes:
             __nb_objects: counts instances
         Methods:
-            __init__: initializes instances 
+            __init__: initializes instances
             with user supplied ir or id from Base
     """
     __nb_objects = 0
