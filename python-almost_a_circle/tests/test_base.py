@@ -9,10 +9,7 @@ class TestBase(unittest.TestCase):
     """
 
     def test_base_id(self):
-        """
-            Test ensures user specified id functionality
-            and auto id functionality within frame.
-        """
+        """Test id stuff"""
         b1 = Base(12)
         self.assertEqual(b1.id, 12)
         b2 = Base()
