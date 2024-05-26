@@ -5,5 +5,5 @@ from models.base import Base
 
 class TestBase(unittest.TestCase):
     """
-        This module defines test methods for the object class Base.
+        This module defines test methods for Base.
     """
