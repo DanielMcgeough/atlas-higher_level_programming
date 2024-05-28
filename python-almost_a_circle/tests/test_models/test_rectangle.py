@@ -358,6 +358,21 @@ class test_rectangle(unittest.TestCase):
 
         self.assertEqual("[]", content)
 
+        def test_saving_to_rectangle(self):
+            '''
+            Testing saving a file into json format sending None
+            '''
+        try:
+            os.remove("Rectangle.json")
+        except:
+            pass
+        r1 = Rectangle(5, 10, 0, 0, 346)
+        Rectangle.save_to_file([])
+
+        with open("Rectangle.json", "r") as file:
+            content = file.read()
+
+        self.assertEqual("[]", content)
     def test_saving_to_file_type(self):
         '''
             Testing saving a file into json format sending None
