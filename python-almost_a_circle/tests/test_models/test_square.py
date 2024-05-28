@@ -329,6 +329,22 @@ class test_square(unittest.TestCase):
 
         self.assertEqual("[]", content)
 
+    def test_saving_to_file_empty(self):
+        '''
+            Testing saving a file into json format sending empty
+        '''
+        try:
+            os.remove("Square.json")
+        except:
+            pass
+        r1 = Square(5, 0, 0, 346)
+        Square.save_to_file([])
+
+        with open("Square.json", "r") as file:
+            content = file.read()
+
+        self.assertEqual("[]", content)
+
     def test_saving_to_file_type(self):
         '''
             Testing saving a file into json format and testing the type
