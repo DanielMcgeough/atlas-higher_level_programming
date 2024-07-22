@@ -1,4 +1,4 @@
-#!/urs/bin/node
+#!/usr/bin/node
 
 if (!isNaN(Number(process.argv[2]))) {
     let i = process.argv[2];
