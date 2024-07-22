@@ -3,9 +3,9 @@
 if (!isNaN(Number(process.argv[2]))) {
     let i = process.argv[2];
     while (i > 0) {
-        console.log('C is fun');
-        i--;
+      console.log('C is fun');
+      i--;
     }
-} else {
+  } else {
     console.log('Missing number of occurences');
-}
+  }
