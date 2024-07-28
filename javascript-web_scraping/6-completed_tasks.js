@@ -8,7 +8,7 @@ request.get(url, { json: true }, (error, response, body) => {
     console.log(error);
     return;
   }
-  
+
   const tasksCompleted = {};
   body.forEach((todo) => {
     if (todo.completed) {
